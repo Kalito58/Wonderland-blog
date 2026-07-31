@@ -1,0 +1,272 @@
+/* ---------------------
+   THE WONDERLAND BLOG
+----------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#edf7f2;
+    color:#2f3e46;
+    font-family:Georgia, serif;
+    line-height:1.8;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(255,255,255,.9);
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+}
+
+.logo h2{
+    color:#2b6157;
+    font-size:30px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#355c55;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:#2b8a78;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(
+    135deg,
+    #9fd3c7,
+    #d6eadf,
+    #edf7f2);
+}
+
+.hero-image{
+    width:300px;
+    max-width:90%;
+    border-radius:20px;
+    margin-bottom:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:24px;
+    color:#4f6964;
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 35px;
+    background:#2b8a78;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#236e60;
+}
+
+/* Latest Story */
+
+.latest{
+    width:90%;
+    max-width:900px;
+    margin:80px auto;
+}
+
+.latest h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin-bottom:25px;
+}
+
+.card a{
+    text-decoration:none;
+    color:#2b8a78;
+    font-weight:bold;
+}
+
+.card a:hover{
+    color:#236e60;
+}
+
+/* Quote */
+
+.quote{
+    width:80%;
+    max-width:800px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.quote blockquote{
+    font-size:34px;
+    font-style:italic;
+    color:#4f6964;
+}
+
+/* About */
+
+.about{
+    background:white;
+    padding:70px 10%;
+}
+
+.about h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+/* Newsletter */
+
+.newsletter{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.newsletter h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.newsletter p{
+    margin-bottom:30px;
+}
+
+.newsletter input{
+    width:320px;
+    max-width:90%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.newsletter button{
+    padding:15px 25px;
+    margin-left:10px;
+    border:none;
+    border-radius:10px;
+    background:#2b8a78;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#236e60;
+}
+
+/* Footer */
+
+footer{
+    background:#d6eadf;
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    color:#4f6964;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+.links{
+    margin-top:20px;
+}
+
+.links a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.subtitle{
+    font-size:20px;
+}
+
+.quote blockquote{
+    font-size:24px;
+}
+
+.newsletter button{
+    margin-top:15px;
+    margin-left:0;
+}
+
+}
+.social-links{
+    text-align:center;
+    margin:40px 0;
+}
+
+.social-links a{
+    display:inline-block;
+    text-decoration:none;
+    background:#2b8a78;
+    color:white;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#236e60;
+}
